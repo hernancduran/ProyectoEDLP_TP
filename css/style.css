@@ -1,0 +1,38 @@
+body { background-image: url('../img/logo_COM.jpg');
+background-repeat: no-repeat; background-attachment: fixed;
+background-position: center center; background-size: cover; }
+
+h1 { background-color: #B2BABB; color: #6C3483; font-family: sans-serif;
+  font-weight: 900; font-size: xx-large;
+  text-decoration: underline; text-decoration-style: wavy;
+  text-align: center; text-decoration-color: #6C3483; text-shadow: black; }
+
+h2 { outline-style: double; background-color: #BB8FCE; font-family: sans-serif;
+  font-weight: bolder; font-size: large;
+  text-decoration: underline; text-align: left; text-shadow: black; }
+
+  .parrafo01 { list-style-position: inside; list-style-type: disc; font-family:
+    sans-serif; font-weight: 400; font-size: large; text-indent: 5%; }
+
+  .parrafo02 { list-style-position: inside; list-style-type: disc; font-family:
+    sans-serif; font-weight: 400; font-size: large; text-indent: 5%; }
+
+.titulo01 { background-color: #B2BABB; color: #6C3483; font-family: sans-serif;
+  font-weight: 800; font-size: x-large;
+  text-decoration: underline; text-decoration-style: wavy;
+  text-align: center; text-decoration-color: #6C3483; text-shadow: black; }
+
+.titulo02 { outline-style: double; background-color: #BB8FCE; font-family: sans-serif;
+  font-weight: bolder; font-size: large;
+  text-decoration: underline; text-align: left; text-shadow: black; }
+
+img { height: 100%; width: 100%; object-fit: contain; }
+.imagen { height: 300px; width: 300px; display: block; margin: 0%auto; }
+
+.descargar { font-family: sans-serif; font-weight: bolder; }
+
+ul { list-style-position: inside; list-style-type: disc; font-family:
+  sans-serif; font-weight: 400; font-size: large; }
+
+ol { list-style-position: inside; list-style-type: decimal; font-family:
+  sans-serif; font-weight: 400; font-size: large; }
