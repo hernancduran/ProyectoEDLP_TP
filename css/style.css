@@ -26,6 +26,10 @@ h2 { outline-style: double; background-color: #BB8FCE; font-family: sans-serif;
 img { height: 100%; width: 100%; object-fit: contain; }
 .imagen { height: 300px; width: 300px; display: block; margin: 0%auto; }
 
+.mapa { display: block; margin: 0%auto; }
+
+.video { display: block; margin: 0%auto; }
+
 .descargar { font-family: sans-serif; font-weight: bolder; }
 
 ul { list-style-position: inside; list-style-type: disc; font-family:
