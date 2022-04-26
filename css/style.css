@@ -12,10 +12,7 @@ h2 { outline-style: double; background-color: #BB8FCE; font-family: sans-serif;
   text-decoration: underline; text-align: left; text-shadow: black; }
 
   .parrafo01 { list-style-position: inside; list-style-type: disc; font-family:
-    sans-serif; font-weight: 400; font-size: large; text-indent: 5%; }
-
-  .parrafo02 { list-style-position: inside; list-style-type: disc; font-family:
-    sans-serif; font-weight: 400; font-size: large; text-indent: 5%; }
+    sans-serif; font-weight: 400; font-size: large; text-indent: 5%; color: #6C3483; }
 
 .titulo01 { background-color: #B2BABB; color: #6C3483; font-family: sans-serif;
   font-weight: 800; font-size: x-large;
@@ -32,7 +29,7 @@ img { height: 100%; width: 100%; object-fit: contain; }
 .descargar { font-family: sans-serif; font-weight: bolder; }
 
 ul { list-style-position: inside; list-style-type: disc; font-family:
-  sans-serif; font-weight: 400; font-size: large; }
+  sans-serif; font-weight: 500; font-size: x-large; }
 
 ol { list-style-position: inside; list-style-type: decimal; font-family:
-  sans-serif; font-weight: 400; font-size: large; }
+  sans-serif; font-weight: 500; font-size: x-large; }
