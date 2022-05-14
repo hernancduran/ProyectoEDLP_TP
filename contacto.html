@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>CONTACTO COM Chef</title>
-    <link rel="stylesheet" href=" ./css/style.css ">
-  </head>
-  <body>
-<!-- header -->
-    <header>
-      <div class="contenedor">
-        <div class="logotop">
-          <img src="img/logo_COMheader.jpg" alt=" logoCOM ">
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Panqueque COM-Chef </title>
+  <link rel="stylesheet" href=" ./css/style.css ">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="contenedor">
+      <div class="logotop">
+        <img id="logocom" src="img/logo_COMheader.jpg" alt=" logoCOM ">
+      </div>
+      <div class="envolventetitulo">
         <div class="marca">
           <h1 id="marcatitulo"> RECETARIO - COM Chef </h1>
         </div>
         <div class="tiporeceta">
           <h1 id="tituloreceta"> Receta PANQUEQUES </h1>
         </div>
-      </header>
-      <!-- NAVbar -->
-      <nav id="menu">
-        <ul>
-          <li> <a href="index.html"> INICIO </a> </li>
-          <li> OTRAS de COM Chef... </li>
-          <li> <a href="https://www.youtube.com/watch?v=fuJZ2uw8FBU&t=12s" target="_blank"> ...ir a TACOS </a> </li>
-          <li> <a href="https://www.youtube.com/watch?v=hmSnZ6Xd97w" target="_blank"> ...ir a FAJITAS</a> </li>
-          <li> <a href="contacto.html">CONTACTO</a> </li>
-
-        </ul>
+      </div>
+    </div>
+  </header>
+  <br>
+  <!-- NAVbar -->
+  <nav id="menu">
+    <div class="caja-barratop">
+      <ul>
+        <li> <a id="to-inicio" href="index.html"> INICIO </a> </li>
+        <li> OTRAS de COM Chef >>> </li>
+        <li> <a id="link-receta" href="https://www.youtube.com/watch?v=fuJZ2uw8FBU&t=12s"
+          target="_blank"> ...ir a TACOS </a> </li>
+          <li> <a id="link-receta" href="https://www.youtube.com/watch?v=hmSnZ6Xd97w"
+            target="_blank"> ...ir a FAJITAS </a> </li>
+            <li> <a id="to-contacto" href="contacto.html">CONTACTO</a> </li>
+          </ul>
+        </div>
       </nav>
-<form>
+      <section>
+
+      <form>
   <label for="nombre"> NOMBRE Y AELLIDO </label>
   <input type="text" name="nombre" value="escribir nombre">
 
@@ -43,20 +54,35 @@
   <input class="xx" type="submit" value="enviar">
 
 </form>
+</section>
 <!-- aca empieza FOOTER-->
 <footer>
-    <div id="desarrollador" class="contenedorfoot">
+  <div class="contenedor-footer">
+  <div class="download">
+    <a class="descargar" href="rcta_panqueques.pdf" target="_blank"> descargar RECETA </a>
+    <br>
+    <h3 class="titulo02"> Video gentileza PC </h3>
+  </div>
+  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/J45Af6F8l-8"
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
+  <div id="desarrollador" class="contenedorfoot">
     <p> COPYRIGHT COM Chef - 2022 / Desarrollador
-    <a href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank"> Hernán C. Durán </a> </p>
+      <a id="hcd" href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank">
+        Hernán C. Durán </a> </p>
+      </div>
   </div>
   <div id="contenedor-redes">
-    <a href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank" title="via Whatsapp">
+    <a href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank"
+    title="via Whatsapp">
     <img src="./img/logo_wsp.png" alt="Logo Whatsapp">
-    </a>
-    <a href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank" title="seguinos Instagram">
-    <img src="./img/logo_instagram.png" alt="Logo Instagram">
-    </a>
-  </div>
+  </a>
+  <a href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank"
+  title="seguinos Instagram">
+  <img src="./img/logo_instagram.png" alt="Logo Instagram">
+</a>
+</div>
   <br>
 </footer>
   </body>
