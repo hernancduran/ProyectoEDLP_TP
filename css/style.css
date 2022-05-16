@@ -10,8 +10,10 @@ header { background-color: #BB8FCE;
     margin: 1vw; }
 
   .logotop
-  { width: 20vw; padding: 1vw; margin-top: 1vh; align-self: center;
-  min-width: 100px; }
+  { width: 10vw; padding: 1vw; margin-top: 1vh; align-self: center;
+  min-width: 100px; filter: drop-shadow(10px 10px 10px gray); }
+  #logocom { width: 12vw; }
+  #logocom:hover { position: relative; width: 10vw; }
 
   .envolventetitulo
   { width: 70vw; min-width: 250px; flex-direction: column; justify-content: space-between;
