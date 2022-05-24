@@ -48,7 +48,8 @@ align-items: center; padding-top: 1vw; }
     }
 /* NOTE: media a 550 de main */
   @media (max-width: 550px) { .main { width: 96vw; display: flex;
-    flex-direction: column; align-content: center; margin: 1vw; }
+    flex-direction: column; justify-content: center;
+    flex-wrap: wrap; margin: 1vw; }
   }
   @media (max-width: 550px) { section { display: flex;
     width: 92vw; align-content: center; margin: 1vw;
@@ -62,16 +63,18 @@ align-items: center; padding-top: 1vw; }
   }
   @media (max-width: 550px) { section ol { font-size: 12px; line-height: 14px; }
   }
-  @media (max-width: 550px) { h2 { font-size: 14px; line-height: 16px; }
+  @media (max-width: 550px) { aside h2 { font-size: 14px; line-height: 16px; }
   }
-  @media (max-width: 550px) { .titulo01 { font-size: 14px; line-height: 16px; }
+  @media (max-width: 550px) { h3.titulo01 { font-size: 14px; line-height: 16px; }
   }
-  @media (max-width: 550px) { .parrafo01 { font-size: 12px; line-height: 14px; }
+  @media (max-width: 550px) { p.parrafo01 { font-size: 12px; line-height: 14px; }
   }
   /* NOTE: media a 550 de footer */
-    @media (max-width: 550px) { footer { display: flex;
+  @media (max-width: 550px) { footer { display: flex;
       flex-direction: column; align-content: center; }
     }
+  @media (max-width: 550px) { h3.titulo02 { font-size: 14px; line-height: 16px; }
+  }
   @media (max-width: 550px) { footer #contenedor-redes { display: none; }
   }
 
