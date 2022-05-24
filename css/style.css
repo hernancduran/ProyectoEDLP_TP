@@ -1,63 +1,163 @@
-header { background-color: #BB8FCE;
-  width: 96vw; min-width: 350px; display: flex;
-  margin: 0% auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
-  .contenedor
+header { background-color: #BB8FCE;
+  width: 98vw; display: flex;
+  margin: 0% auto; }
+
+/* NOTE: media a 550 del header */
+@media (max-width: 550px) { header { display: flex; justify-content: center;
+width: 96vw; }
+  }
+@media (max-width: 550px) { .contenedor { display: flex; width: 94vw;
+  flex-direction: column; align-content: center; margin: 1vw; }
+  }
+@media (max-width: 550px) { header .logotop { width: 92vw; display: flex;
+justify-content: center; }
+  }
+@media (max-width: 550px) { header #logocom { width: 45vw; display: flex;
+align-items: center; padding-top: 1vw; }
+  }
+@media (max-width: 550px) { .envolventetitulo { display: flex;
+    width: 92vw; justify-content: center; }
+  }
+@media (max-width: 550px) { .tiporeceta { display: flex;
+        width: 92vw; justify-content: center; }
+  }
+@media (max-width: 550px) { .marca { display: flex;
+                width: 92vw; justify-content: center; }
+  }
+@media (max-width: 550px) { header #marcatitulo { font-size: 24px; line-height: 22px; }
+  }
+@media (max-width: 550px) { header #tituloreceta { font-size: 18px; line-height: 16px; }
+    }
+@media (max-width: 550px) { #libro02 { display: none; }
+  }
+/* NOTE: media a 550 de NAVbar */
+@media (max-width: 550px) { .caja-barratop { display: flex;
+  flex-wrap: wrap; justify-content: space-around; align-items: center; width: 96vw; }
+  }
+@media (max-width: 550px) { nav { font-size: 14px; line-height: 24px; }
+    }
+@media (max-width: 550px) { #link-receta { font-size: 14px; line-height: 14px; }
+    }
+@media (max-width: 550px) { #to-inicio { font-size: 14px; line-height: 14px; }
+    }
+@media (max-width: 550px) { #to-contacto { font-size: 14px; line-height: 14px; }
+    }
+/* NOTE: media a 550 de main */
+  @media (max-width: 550px) { .main { width: 96vw; display: flex;
+    flex-direction: column; align-content: center; margin: 1vw; }
+  }
+  @media (max-width: 550px) { section { display: flex;
+    width: 92vw; align-content: center; margin: 1vw;
+    height: 60vh; }
+  }
+  @media (max-width: 550px) { aside { display: flex;
+      width: 92vw; align-content: center; margin: 1vw;
+    height: 50vh; }
+  }
+  @media (max-width: 550px) { section ul { font-size: 12px; line-height: 14px; }
+  }
+  @media (max-width: 550px) { section ol { font-size: 12px; line-height: 14px; }
+  }
+  @media (max-width: 550px) { h2 { font-size: 14px; line-height: 16px; }
+  }
+  @media (max-width: 550px) { .titulo01 { font-size: 14px; line-height: 16px; }
+  }
+  @media (max-width: 550px) { .parrafo01 { font-size: 12px; line-height: 14px; }
+  }
+  /* NOTE: media a 550 de footer */
+    @media (max-width: 550px) { footer { display: flex;
+      flex-direction: column; align-content: center; }
+    }
+  @media (max-width: 550px) { footer #contenedor-redes { display: none; }
+  }
+
+/* NOTE: arranca style header */
+   .contenedor
   { display: flex; align-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
-    width: 96vw;
+    width: 98vw;
     margin: 1vw; }
 
   .logotop
-  { width: 10vw; padding: 1vw; margin-top: 1vh; align-self: center;
-  min-width: 100px; filter: drop-shadow(10px 10px 10px gray); }
-  #logocom { width: 12vw; }
-  #logocom:hover { position: relative; width: 10vw; }
+  { display: flex; width: 10vw; align-self: center;
+  filter: drop-shadow(10px 10px 10px gray); }
+  #logocom { width: 10vw; min-width: 90px; }
+  #logocom:hover { width: 8vw; }
 
   .envolventetitulo
-  { width: 70vw; min-width: 250px; flex-direction: column; justify-content: space-between;
+  { display: flex; width: 50vw; flex-direction: column;
+    justify-content: space-between;
   align-items: stretch; }
 
+  #marcatitulo { color: white; font-family: 'Prompt', sans-serif;
+    font-size: 52px; line-height: 45px;
+    text-decoration: underline; text-decoration-style: wavy;
+    text-align: center; text-decoration-color: #6C3483;
+    text-shadow: 2px 2px 5px #000; }
+
+  #tituloreceta { color: black; font-family: 'Montserrat', sans-serif;
+      font-weight: 900; font-size: 36px; line-height: 34px;
+      text-align: center; text-decoration-color: #6C3483; text-shadow: black; }
+
+  .librorecetas
+  { display: flex; width: 10vw; padding-right: 1vw; margin-top: 1vh;
+    align-self: center;
+  filter: drop-shadow(10px 10px 10px black); }
+
+  #libro02 { max-width: 12vw; min-width: 90px; }
+  #libro02:hover { width: 8vw; }
+
   .marca
-  { padding-bottom: 10px; background-color: #BB8FCE; }
+  { background-color: #BB8FCE; }
 
   .tiporeceta
   { background-color: #BB8FCE; }
+
+/* NOTE: arranca style nav */
 
   .caja-barratop
    { background-color: #BFC9CA; display: flex; flex-wrap: wrap;
      width: 96vw;
      margin: 0% auto; }
 
-nav ul li { display: inline-block; padding-left: 3vw;
-    color: #6C3483; font-family: sans-serif;
-    font-weight: 400; font-size: x-large;
-    text-align: center; text-decoration-color: #6C3483; text-shadow: 2px 2px 5px black; }
+nav ul li { display: inline-block; padding-left: 3.5vw;
+    color: #6C3483; font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: center; text-decoration-color: #6C3483;
+    text-shadow: 2px 2px 5px black; }
 
-nav ul li:hover { color: black; font-weight: 600; }
+nav ul li:hover { color: black; }
 
-#link-receta { font-weight: 600; text-decoration: underline; text-decoration-style: wavy; }
+#link-receta { text-decoration: underline;
+  text-decoration-style: wavy; }
 #link-receta:hover { color: white; background-color: black;  }
 
-#to-inicio { font-weight: 800; color: black; }
+#to-inicio { font-family: 'Prompt', sans-serif; color: black; }
 #to-inicio:hover { color: white; background-color: #6C3483; }
 
-#to-contacto { font-weight: 800; color: black; }
+#to-contacto { font-family: 'Prompt', sans-serif; color: black; }
 #to-contacto:hover { color: white; background-color: #6C3483; }
 
-.main { display: flex; flex-direction: row; justify-content: flex-start;
-align-items: stretch; flex-wrap: wrap; margin-left: 4vw; }
+/* NOTE: arranca style main */
+
+.main { display: flex; width: 96vw; flex-direction: row; justify-content: flex-start;
+align-items: stretch; flex-wrap: wrap; margin-left: 2vw; }
 
 section { display: flex; width: 58vw; justify-content: flex-start;
-margin-right: 1rem; min-width: 350px;
+margin-right: 1vw;
 height: 600px;
 overflow: scroll;
-border: 3px solid black;
+border: 5px solid black;
 box-sizing: border-box; }
 
-aside { display: flex; flex-direction: column; width: 32vw; justify-content: flex-start;
-margin: 1vw; max-width: 350px; min-width: 350px;
+aside { display: flex; flex-direction: column; width: 32vw;
+  justify-content: flex-start;
+margin: 1vw;
 height: 600px;
 overflow: auto;
 background-color: #EBDEF0; }
@@ -69,30 +169,24 @@ footer { display: flex; width: 96vw; }
 background-repeat: no-repeat; background-attachment: local;
 background-position: center center; background-size: cover; }
 
-#marcatitulo { color: white; font-family: 'arial';
-  font-weight: 900; font-size: 35px;
-  text-decoration: underline; text-decoration-style: wavy;
-  text-align: center; text-decoration-color: #6C3483; text-shadow: 2px 2px 5px #000; }
-
-#tituloreceta { color: black; font-family: sans-serif;
-    font-weight: 900; font-size: 30px; line-height: 25px;
-    text-align: center; text-decoration-color: #6C3483; text-shadow: black; }
-
-  h2 { background-color: #BB8FCE; font-family: sans-serif;
-  font-weight: bolder; font-size: large;
+  h2 { background-color: #BB8FCE; font-family: 'Prompt', sans-serif;
+  font-size: 18px;
   text-decoration: underline; text-align: left; text-shadow: black; }
 
-  .parrafo01 { list-style-position: inside; list-style-type: disc; font-family:
-    sans-serif; font-weight: 400; font-size: large; text-indent: 5%; color: #6C3483; }
+  .parrafo01 { list-style-position: inside; list-style-type: disc;
+    font-family: 'Prompt', sans-serif; font-size: 18px;
+    text-indent: 5%; color: #6C3483; }
 
-.titulo01 { background-color: #B2BABB; color: #6C3483; font-family: sans-serif;
-  font-weight: 800; font-size: x-large;
+.titulo01 { background-color: #B2BABB; color: #6C3483;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 24px;
   text-decoration: underline; text-decoration-style: wavy;
   text-align: center; text-decoration-color: #6C3483; text-shadow: black; }
 
-.titulo02 { outline-style: double; background-color: #BB8FCE; font-family: sans-serif;
+.titulo02 { outline-style: double; background-color: #BB8FCE;
+  font-family: 'Montserrat', sans-serif;
   display: block;
-  font-weight: bolder; font-size: large;
+  font-size: 24px;
   text-decoration: underline; text-align: left; text-shadow: black; }
 
 .download { width: 96vw; color: #6C3483; font-family: sans-serif;
@@ -102,22 +196,25 @@ background-position: center center; background-size: cover; }
 .imagen { align-self: flex-start; width: 100%; margin: 0%auto; }
 .imagen img:hover { position: relative; width: 110%; }
 
-.mapa { width: 26vw; display: block; margin: 0%auto; min-width: 250px; }
+.mapa { width: 30vw; margin: 1%; }
 
-.video { display: block; margin: 0%auto; }
-.video:hover { width: 80vw; transition-property: all; transition-duration: 0.5s;
+.video { display: flex; justify-content: center; width: 96vw; }
+.videoyoutube:hover { width: 75vw; transition-property: all; transition-duration: 0.5s;
 transition-timing-function: ease-in-out; transition-delay: 0s; }
 
-.descargar { background-color: #B2BABB; color: #6C3483; font-family: sans-serif;
-  font-weight: 800; font-size: x-large;
+.descargar { background-color: #B2BABB; color: #6C3483;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
   text-decoration: underline; text-decoration-style: wavy;
   text-align: center; text-decoration-color: #6C3483; text-shadow: black; }
 
-ul { list-style-position: inside; list-style-type: disc; font-family:
-  sans-serif; font-weight: 500; font-size: x-large; }
+ul { list-style-position: inside; list-style-type: disc;
+   font-family: 'Gloria Hallelujah', cursive;
+   font-size: 24px; }
 
-ol { list-style-position: inside; list-style-type: decimal; font-family:
-  sans-serif; font-weight: 500; font-size: x-large; }
+ol { list-style-position: inside; list-style-type: decimal;
+   font-family: 'Gloria Hallelujah', cursive;
+   font-size: 24px; }
 
   .contenedor-footer
   { width: 96vw; }
@@ -127,7 +224,8 @@ ol { list-style-position: inside; list-style-type: decimal; font-family:
     width: 96vw; }
 
 #contenedor-redes { width: 200px; display: flex;
-  justify-content: space-around; position: fixed; top: 88%; right: 2%; }
+  justify-content: space-around; align-items: flex-end; position: fixed;
+  top: 90vh; right: 2vw; overflow: hidden; }
 
 #contenedor-redes img { width: 50px; filter: drop-shadow(2px 4px 3px gray);
 transition-property: all; transition-duration: 0.25s;
@@ -136,11 +234,11 @@ transition-timing-function: ease-in-out; transition-delay: 0s;
 
 #contenedor-redes img:hover { width: 60px; }
 
-  #desarrollador { color: white; font-family: 'arial'; line-height: 80px;
-    font-weight: 200; font-size: 20px;
+  #desarrollador { color: white; font-family: 'arial'; line-height: 28px;
+    font-size: 24px;
     text-align: center; text-decoration-color: #6C3483; text-shadow: black; }
 
     #hcd:hover { color: white; background-color: #6C3483;
-    font-weight: 800; font-size: 21px; transition-property: all;
+    font-size: 24px; transition-property: all;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out; transition-delay: 0s;}
