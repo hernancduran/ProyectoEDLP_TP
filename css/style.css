@@ -3,49 +3,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 header { background-color: #BB8FCE;
-  width: 98vw; display: flex;
+  width: 98vw; display: flex; border-radius: 20px;
   margin: 0% auto; }
 
 /* NOTE: media a 550 del header */
 @media (max-width: 550px) { header { display: flex; justify-content: center;
-width: 96vw; }
+width: 98vw; }
   }
-@media (max-width: 550px) { .contenedor { display: flex; width: 94vw;
-  flex-direction: column; align-content: center; margin: 1vw; }
+@media (max-width: 550px) { header .contenedor { display: flex; width: 94vw;
+  flex-direction: column; justify-content: center; margin: 1vw; align-items: center;}
   }
 @media (max-width: 550px) { header .logotop { width: 92vw; display: flex;
 justify-content: center; }
   }
 @media (max-width: 550px) { header #logocom { width: 45vw; display: flex;
-align-items: center; padding-top: 1vw; }
+align-items: center; padding-top: 1vh; padding-bottom: 3vh; }
   }
-@media (max-width: 550px) { .envolventetitulo { display: flex;
-    width: 92vw; justify-content: center; }
+@media (max-width: 550px) { .envolventetitulo { width: 92vw; }
   }
-@media (max-width: 550px) { .tiporeceta { display: flex;
-        width: 92vw; justify-content: center; }
+@media (max-width: 550px) { .tiporeceta { width: 90vw; }
   }
 @media (max-width: 550px) { .marca { display: flex;
-                width: 92vw; justify-content: center; }
+                width: 90vw; }
   }
-@media (max-width: 550px) { header #marcatitulo { font-size: 24px; line-height: 22px; }
+@media (max-width: 768px) { header #marcatitulo { font-size: 22px; line-height: 22px; }
+    }
+@media (max-width: 768px) { header #tituloreceta { font-size: 18px; line-height: 16px; }
+      }
+@media (max-width: 550px) { header #marcatitulo { font-size: 22px; line-height: 22px; }
   }
 @media (max-width: 550px) { header #tituloreceta { font-size: 18px; line-height: 16px; }
     }
-@media (max-width: 550px) { #libro02 { display: none; }
+@media (max-width: 550px) { img#libro02 { display: none; }
   }
 /* NOTE: media a 550 de NAVbar */
 @media (max-width: 550px) { .caja-barratop { display: flex;
   flex-wrap: wrap; justify-content: space-around; align-items: center; width: 96vw; }
   }
-@media (max-width: 550px) { nav { font-size: 14px; line-height: 24px; }
-    }
-@media (max-width: 550px) { #link-receta { font-size: 14px; line-height: 14px; }
-    }
-@media (max-width: 550px) { #to-inicio { font-size: 14px; line-height: 14px; }
-    }
-@media (max-width: 550px) { #to-contacto { font-size: 14px; line-height: 14px; }
-    }
+  @media (max-width: 550px) { nav ul { font-size: 14px; line-height: 22px; }
+      }
+    @media (max-width: 768px) { nav ul { font-size: 14px; line-height: 22px; }
+          }
+    @media (max-width: 550px) { #link-receta { font-size: 14px; line-height: 14px; }
+        }
+    @media (max-width: 550px) { #to-inicio { font-size: 14px; line-height: 14px; }
+        }
+    @media (max-width: 550px) { #to-contacto { font-size: 14px; line-height: 14px; }
+        }
+        @media (max-width: 768px) { #link-receta { font-size: 12px; line-height: 12px; }
+            }
+        @media (max-width: 768px) { #to-inicio { font-size: 12px; line-height: 12px; }
+            }
+        @media (max-width: 768px) { #to-contacto { font-size: 12px; line-height: 12px; }
+            }
 /* NOTE: media a 550 de main */
   @media (max-width: 550px) { .main { width: 96vw; display: flex;
     flex-direction: column; justify-content: center;
@@ -82,64 +92,66 @@ align-items: center; padding-top: 1vw; }
 
 /* NOTE: arranca style header */
    .contenedor
-  { display: flex; align-content: flex-start;
+  { display: flex; align-content: flex-start; flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; min-height: 170px;
     width: 98vw;
     margin: 1vw; }
 
   .logotop
-  { display: flex; width: 10vw; align-self: center;
-  filter: drop-shadow(10px 10px 10px gray); }
-  #logocom { width: 10vw; min-width: 90px; }
-  #logocom:hover { width: 8vw; }
+  { display: flex; width: 18vw; min-width: 120px; align-self: center; margin-top: 1.5vh;
+  filter: drop-shadow(10px 10px 10px gray); justify-content: center; }
+  #logocom { width: 12vw; min-width: 120px; }
+  #logocom:hover { transition-property: all; transition-duration: 0.25s;
+  transition-timing-function: ease-in-out; transition-delay: 0s; width: 11.5vw; }
 
   .envolventetitulo
   { display: flex; width: 50vw; flex-direction: column;
-    justify-content: space-between;
-  align-items: stretch; }
+    justify-content: space-between; margin-top: 1vh; padding-right: 2vh; max-height: 170px; }
+
+    .marca
+    { background-color: #BB8FCE; display: flex; width: 48vw; align-self: center;
+    align-items: center; justify-content: center; }
+
+    .tiporeceta
+    { display: flex; width: 48vw; align-self: center;
+    align-items: center; justify-content: center; }
 
   #marcatitulo { color: white; font-family: 'Prompt', sans-serif;
-    font-size: 52px; line-height: 45px;
+    font-size: 40px; line-height: 60px; padding-top: 2vh;
     text-decoration: underline; text-decoration-style: wavy;
     text-align: center; text-decoration-color: #6C3483;
     text-shadow: 2px 2px 5px #000; }
 
   #tituloreceta { color: black; font-family: 'Montserrat', sans-serif;
-      font-weight: 900; font-size: 36px; line-height: 34px;
+      font-size: 32px; line-height: 40px; padding-bottom: 1vh;
       text-align: center; text-decoration-color: #6C3483; text-shadow: black; }
 
   .librorecetas
-  { display: flex; width: 10vw; padding-right: 1vw; margin-top: 1vh;
+  { display: flex; width: 14vw; padding-right: 1vw; margin-top: 2vh;
     align-self: center;
   filter: drop-shadow(10px 10px 10px black); }
 
-  #libro02 { max-width: 12vw; min-width: 90px; }
-  #libro02:hover { width: 8vw; }
-
-  .marca
-  { background-color: #BB8FCE; }
-
-  .tiporeceta
-  { background-color: #BB8FCE; }
+  #libro02 { width: 12vw; min-width: 90px; }
+  #libro02:hover { width: 10vw; }
 
 /* NOTE: arranca style nav */
 
   .caja-barratop
-   { background-color: #BFC9CA; display: flex; flex-wrap: wrap;
-     width: 96vw;
+   { background-color: #ffc107; display: flex; flex-direction: row; flex-wrap: wrap;
+     width: 96vw; align-items: center; justify-content: space-around;
      margin: 0% auto; }
 
-nav ul li { display: inline-block; padding-left: 3.5vw;
+nav ul li { display: inline-block; margin: 2vw;
     color: #6C3483; font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 18px; padding-top: 1.5vh;
     text-align: center; text-decoration-color: #6C3483;
     text-shadow: 2px 2px 5px black; }
 
 nav ul li:hover { color: black; }
 
 #link-receta { text-decoration: underline;
-  text-decoration-style: wavy; }
+  text-decoration-style: wavy; color: #6C3483; }
 #link-receta:hover { color: white; background-color: black;  }
 
 #to-inicio { font-family: 'Prompt', sans-serif; color: black; }
@@ -160,7 +172,7 @@ overflow: scroll;
 border: 5px solid black;
 box-sizing: border-box; }
 
-aside { display: flex; flex-direction: column; width: 32vw;
+aside { display: flex; flex-direction: column; width: 34vw;
   justify-content: flex-start;
 margin: 1vw;
 height: 600px;
@@ -189,8 +201,8 @@ background-position: center center; background-size: cover; }
   text-align: center; text-decoration-color: #6C3483; text-shadow: black; }
 
 .titulo02 { outline-style: double; background-color: #BB8FCE;
-  font-family: 'Montserrat', sans-serif;
-  display: block;
+  font-family: 'Montserrat', sans-serif; margin-left: 1vw;
+  display: flex; width: 96vw;
   font-size: 24px;
   text-decoration: underline; text-align: left; text-shadow: black; }
 
@@ -207,6 +219,8 @@ background-position: center center; background-size: cover; }
 .videoyoutube:hover { width: 75vw; transition-property: all; transition-duration: 0.5s;
 transition-timing-function: ease-in-out; transition-delay: 0s; }
 
+.download { margin-bottom: 3vh; }
+
 .descargar { background-color: #B2BABB; color: #6C3483;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
@@ -222,15 +236,33 @@ ol { list-style-position: inside; list-style-type: decimal;
    font-size: 24px; }
 
   .contenedor-footer
-  { width: 96vw; }
+  { width: 96vw; display: flex; flex-direction: column;}
+
+  .cajafinal
+  { width: 98vw; display: flex; flex-direction: column;
+    flex-wrap: wrap; margin: 0%auto; padding-top: 4vh; }
+
+  .contenedor-cards
+  { width: 96vw; display: flex; flex-direction: column;
+    flex-wrap: wrap; margin: 1vw;}
 
   .contenedorfoot
   { background-color: #B2BABB;
-    width: 96vw; }
+    width: 98vw; display: flex; justify-content: space-around; margin-bottom: 2vh;
+  margin-left: 0.5vw; margin-right: 2vw; }
+
+  .card { filter: drop-shadow(10px 10px 10px black) }
+
+  .card-img-top
+  { padding: 1vw; border-radius: 25px; }
+
+  h5 { font-family: 'Montserrat', sans-serif; }
+
+  p.card-text { font-family: 'Prompt', sans-serif; }
 
 #contenedor-redes { width: 200px; display: flex;
   justify-content: space-around; align-items: flex-end; position: fixed;
-  top: 90vh; right: 2vw; overflow: hidden; }
+  top: 88vh; right: 2vw; overflow: hidden; }
 
 #contenedor-redes img { width: 50px; filter: drop-shadow(2px 4px 3px gray);
 transition-property: all; transition-duration: 0.25s;
@@ -240,7 +272,7 @@ transition-timing-function: ease-in-out; transition-delay: 0s;
 #contenedor-redes img:hover { width: 60px; }
 
   #desarrollador { color: white; font-family: 'arial'; line-height: 28px;
-    font-size: 24px;
+    font-size: 24px; margin-top: 1vh;
     text-align: center; text-decoration-color: #6C3483; text-shadow: black; }
 
     #hcd:hover { color: white; background-color: #6C3483;
