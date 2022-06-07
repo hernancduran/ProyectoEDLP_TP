@@ -9,6 +9,7 @@
   <meta name="author" content="Hernan Duran">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Panqueque COM-Chef </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href=" ./css/style.css ">
 </head>
 
@@ -34,6 +35,11 @@
     </div>
   </header>
   <br>
+  <!-- boton modo noche-->
+  <div class="contenedorbotonnoche">
+    <button onclick="fondooscuro()" class="btn btn-dark">MODO NOCTURNO</button>
+    <button onclick="fondoclaro()" class="btn btn-light">MODO STANDARD</button>
+  </div>
   <!-- NAVbar -->
   <nav id="menu">
     <div class="caja-barratop">
@@ -48,42 +54,52 @@
           </ul>
         </div>
       </nav>
+      <br>
       <section>
 
-      <form>
-  <label for="nombre"> NOMBRE Y AELLIDO </label>
-  <input type="text" name="nombre" value="escribir nombre">
+        <form>
+          <label for="nombre"> NOMBRE Y AELLIDO </label>
+          <input type="text" name="nombre" value="escribir nombre">
 
-  <label for="email"> CORREO ELECTRONICO </label>
-  <input type="text" name="email" value="escribir correo">
+          <label for="email"> CORREO ELECTRONICO </label>
+          <input type="text" name="email" value="escribir correo">
 
-  <label for="mensaje"> MENSAJE </label>
-  <textarea name="name" rows="10" cols="80">mensaje</textarea>
+          <label for="mensaje"> MENSAJE </label>
+          <textarea name="name" rows="10" cols="80">mensaje</textarea>
 
-  <input class="xx" type="submit" value="enviar">
+          <input class="xx" type="submit" value="enviar">
 
-</form>
-</section>
-<!-- aca empieza FOOTER-->
-<footer>
-  <div class="contenedor-footer">
-    <div id="desarrollador" class="contenedorfoot">
-    <p> COPYRIGHT COM Chef - 2022 / Desarrollador
-      <a id="hcd" href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank">
-        Hernán C. Durán </a> </p>
+        </form>
+      </section>
+      <!-- aca empieza FOOTER-->
+      <footer>
+        <div class="contenedor-footer">
+          <div id="desarrollador" class="contenedorfoot">
+            <p> COPYRIGHT COM Chef - 2022 / Desarrollador
+              <a id="hcd" href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank">
+                Hernán C. Durán </a> </p>
+              </div>
+            </div>
+            <div id="contenedor-redes">
+              <a href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank"
+              title="via Whatsapp">
+              <img src="./img/logo_wsp.png" alt="Logo Whatsapp">
+            </a>
+            <a href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank"
+            title="seguinos Instagram">
+            <img src="./img/logo_instagram.png" alt="Logo Instagram">
+          </a>
+        </div>
+        <br>
+      </footer>
+      <!-- boton DESARROLLADOR-->
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button onclick="contactame()" class="btn btn-primary" type="button">Contacta al Desarrolador</button>
       </div>
-  </div>
-  <div id="contenedor-redes">
-    <a href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank"
-    title="via Whatsapp">
-    <img src="./img/logo_wsp.png" alt="Logo Whatsapp">
-  </a>
-  <a href="https://github.com/hernancduran/ProyectoEDLP_TP3" target="_blank"
-  title="seguinos Instagram">
-  <img src="./img/logo_instagram.png" alt="Logo Instagram">
-</a>
-</div>
-  <br>
-</footer>
-  </body>
-</html>
+      <br>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <!-- JavaScript PROPIO -->
+      <script src="./js/code-guide.js"></script>
+    </body>
+    </html>
